@@ -82,3 +82,34 @@ console.log(numeros.some(numero => numero > 8))
 // some
 console.log(numeros.every(numero => numero > 6))
 console.log(numeros.every(numero => numero < 8))
+
+/*
+function wrapping(gifts) {
+  // Creamos un nuevo array para almacenar los regalos envueltos
+  const wrappedGifts = [];
+
+  // Iteramos sobre cada regalo en el array original
+  for (const gift of gifts) {
+    // Calculamos la longitud del regalo y agregamos 2 para los bordes de papel
+    const length = gift.length + 2;
+
+    // Creamos una línea de asteriscos para la parte superior e inferior
+    const topBottom = '*'.repeat(length);
+
+    // Creamos el regalo envuelto con los bordes de papel y el regalo en el centro
+    const wrappedGift = `${topBottom}\n*${gift}*\n${topBottom}`;
+
+    // Agregamos el regalo envuelto al nuevo array
+    wrappedGifts.push(wrappedGift);
+  }
+
+  // Devolvemos el array con los regalos envueltos
+  return wrappedGifts;
+}
+
+// Ejemplo de uso
+const gifts = ['cat', 'game', 'socks'];
+const wrapped = wrapping(gifts);
+
+console.log(wrapped);
+*/
