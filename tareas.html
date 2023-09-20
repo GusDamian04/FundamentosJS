@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas con Javascript</title>
+    <style>
+        body{
+            background-color: rgb(136, 192, 202);
+            text-align: center;
+            padding-left: 500px;
+            padding-top: 70px;
+        }
+        div{
+            padding: 50px;
+            padding-top: 1px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px 5px #999 ;
+            width: 250px;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.925);
+            align-items: flex-end;
+        }
+        button{
+            width: 75px;
+            height: 50px;
+            background-color: rgb(12, 185, 12);
+            border-radius: 5px;
+            border-color: rgb(12, 185, 12);
+        }
+        input{
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .container button:hover{
+            background-color: rgb(182, 13, 13);
+            border-color: rgb(182, 13, 13);
+        }
+        h1{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas con Javascript</h1>
+        <div class="formulario">
+            <h2>Ingresa Tarea</h2>
+            <textarea name="" id="inputTarea" cols="30" rows="10"></textarea>
+            <h2>Hora</h2>
+            <input type="time" name="" id="tiempo">
+            <button onclick="addTarea()">Agregar Tarea</button>
+        </div>
+        <div class="box" id="tareas">
+            <h2>Tareas</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script src="./tarea.js"></script>
+</body>
+</html>
+
+        
